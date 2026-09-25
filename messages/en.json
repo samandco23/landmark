@@ -1,0 +1,197 @@
+{
+  "meta": {
+    "title": "Cross-Border E-Commerce Logistics | Landmark Global",
+    "description": "International logistics services for companies - we are experts in parcel transport, customs clearance and delivery of e-commerce products."
+  },
+  "nav": {
+    "businessEnquiry": "Business Enquiry",
+    "customerSupport": "Customer Support",
+    "parcelTracking": "Parcel tracking",
+    "ourCompany": "Our Company",
+    "sustainability": "Sustainability",
+    "clientLogin": "Client Login",
+    "services": "Services",
+    "destinations": "Destinations",
+    "integrations": "Integrations",
+    "mercury": "Mercury",
+    "news": "News & Insights",
+    "contactUs": "Contact Us",
+    "allDestinations": "All destinations"
+  },
+  "home": {
+    "hero": {
+      "title": "We make global ecommerce easy",
+      "subtitle": "At Landmark Global, we don’t just ship... we simplify. With local expertise and a global network, we help your business expand with ease.",
+      "cta": "Get more info"
+    },
+    "gateway": {
+      "title": "Your gateway to seamless global shipping",
+      "intro": "Local expertise, flexible cross-border solutions, and one platform to manage it all... from onboarding to delivery.",
+      "body": "Seamlessly integrate your business with our global network, ensuring compliance, speed, and transparency at every step. Track, optimize, and scale with tools designed to simplify international logistics and enhance customer experience."
+    },
+    "features": {
+      "f1": {
+        "title": "Global reach with local expertise",
+        "text": "Because we are part of Bnode, you are connected to an international logistics network while still enjoying the personal, local Landmark Global team."
+      },
+      "f2": {
+        "title": "Reliable and flexible cross-border capabilities",
+        "text": "Because we are carrier neutral, we can offer flexibility and quality solutions to ship to more than 220 destinations. We bring fulfilment, logistics, and customs clearance together."
+      },
+      "f3": {
+        "title": "One single connection to use all our network services",
+        "text": "Mercury is a robust and feature-rich proprietary software, designed and owned by Landmark Global providing all the functionality needed to manage shipping from end-to-end."
+      },
+      "f4": {
+        "title": "Specialised onboarding team",
+        "text": "Our onboarding is led by specialists in logistics, technology, and customer service. We make the process fast and smooth aligning your systems and workflows from day one."
+      }
+    },
+    "usps": {
+      "title": "Parcel delivery made easy",
+      "text": "At Landmark Global we are experts in transporting, clearing, and delivering ecommerce products directly to customers all over the world.",
+      "stats": {
+        "customers": "leading e-commerce customers",
+        "partners": "commercial partners",
+        "facilities": "facilities across 4 continents"
+      }
+    },
+    "services": {
+      "parcel": {
+        "title": "International parcel shipping",
+        "p1": "We make every mile count. From first movement to final delivery, our specialized delivery services ensure reliability and control. We move your products with care across cities, countries and continents.",
+        "p2": "Through our domestic and international transport network we deliver every shipment efficiently everywhere, any time and on time.",
+        "cta": "Learn more"
+      },
+      "trade": {
+        "title": "Trade services",
+        "p1": "Our in-house compliance teams are experts in clearing your products all over the world to ensure your shipments are processed efficiently with our customer clearance services.",
+        "p2": "By combining our proprietary clearance platform with a team of dedicated trade experts, we make global expansion straightforward and hassle-free for businesses of all sizes",
+        "cta": "Learn more"
+      },
+      "returns": {
+        "title": "Flexible returns management",
+        "p1": "Our cross-border returns solutions make it easy for your customers to send items back hassle-free, while giving you full control and visibility every step of the way.",
+        "p2": "Behind the scenes, we handle everything: label generation, first-mile transport, customs clearance and final-mile delivery whether that's back to your warehouse, your 3PL or a regional consolidation hub.",
+        "cta": "Learn more"
+      },
+      "ecommerce": {
+        "title": "Ecommerce solutions",
+        "p1": "At Landmark Global, we specialize in providing reliable cross-border logistics services for online businesses of all sizes. Along with a global presence, we have the expertise to handle all of your ecommerce shipping needs.",
+        "p2": "We work with a wide range of postal and delivery partners to provide delivery services to over 220 destinations worldwide. Our partnerships with major global carriers allow us to offer competitive shipping rates and flexible delivery options to meet the unique needs of your business.",
+        "cta": "Learn more"
+      },
+      "mail": {
+        "title": "International mail delivery",
+        "p1": "We provide you with extensive knowledge and experience in mail delivery globally with daily connections to postal operators worldwide.",
+        "bullets": {
+          "b1": "Global Network – Direct links to major postal systems across continents.",
+          "b2": "Proven Expertise – Decades of experience in international logistics and compliance.",
+          "b3": "Reliable Speed – Daily connections ensure timely and secure delivery everywhere."
+        },
+        "cta": "Mail solutions"
+      }
+    },
+    "map": {
+      "title": "Our global reach",
+      "text": "We proudly offer delivery services to over 220 destinations worldwide, with a focus on the key markets below. These strategic lanes are where we can provide you with the best-in-class logistics solutions, ensuring your ecommerce parcels reach their destinations efficiently and reliably.",
+      "facilities": "facilities",
+      "regions": {
+        "europe": "Europe",
+        "americas": "Americas",
+        "asia": "Asia",
+        "oceania": "Oceania"
+      }
+    },
+    "partners": {
+      "title": "Trusted by leading e-commerce companies including"
+    },
+    "cta": {
+      "contact": "Contact Us"
+    },
+    "blog": {
+      "title": "Find out more by exploring our blog",
+      "readMore": "View more related articles",
+      "readTime": "{minutes} read"
+    }
+  },
+  "tracking": {
+    "title": "Parcel tracking",
+    "subtitle": "Enter your tracking number to follow your shipment at every step of its journey.",
+    "placeholder": "e.g. LMG-XXXXXXXX",
+    "button": "Track",
+    "notFound": "No shipment found for this tracking number.",
+    "demoHint": "Try a demo code:",
+    "status": {
+      "CREATED": "Label created",
+      "IN_TRANSIT": "In transit",
+      "CUSTOMS": "In customs",
+      "OUT_FOR_DELIVERY": "Out for delivery",
+      "DELIVERED": "Delivered",
+      "EXCEPTION": "Exception",
+      "UNKNOWN": "Unknown"
+    },
+    "destination": "Destination",
+    "timeline": "Shipment journey"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Tell us about your shipping needs and our experts will get back to you.",
+    "name": "Full name",
+    "email": "Email address",
+    "company": "Company (optional)",
+    "destination": "Main destination markets (optional)",
+    "message": "Your message",
+    "submit": "Send message",
+    "success": "Thank you! Your message has been sent.",
+    "error": "Something went wrong. Please check the form and try again."
+  },
+  "services": {
+    "title": "Our services",
+    "subtitle": "Cross-border logistics built around your business — from parcels to postal solutions."
+  },
+  "about": {
+    "title": "Our Company",
+    "intro": "Landmark Global is the international logistics specialist of Bnode, connecting merchants to customers in more than 220 destinations.",
+    "statCustomers": "leading e-commerce customers",
+    "statPartners": "commercial partners",
+    "statFacilities": "facilities across 4 continents",
+    "body1": "We combine local expertise with a global network. Our teams know the markets they operate in, while our carrier-neutral model lets us pick the best delivery option for every parcel.",
+    "body2": "From onboarding to customs clearance and last-mile delivery, one platform — Mercury — gives you end-to-end visibility over your international shipments.",
+    "cta": "Contact us"
+  },
+  "sustainability": {
+    "title": "Sustainability",
+    "intro": "We are committed to making cross-border e-commerce logistics more sustainable — for the planet and for the communities we deliver to.",
+    "pill1": "of shipments measured on CO₂e",
+    "pill2": "reporting per parcel",
+    "pill3": "destinations served responsibly",
+    "body1": "Because we are carrier neutral, we can factor environmental performance into every routing decision, combining postal and parcel networks to reduce the distance travelled per parcel.",
+    "body2": "We consolidate volumes, optimise line-hauls and invest in facility energy efficiency across our 27 installations, while helping our customers choose greener delivery options at checkout.",
+    "cta": "Talk to our team"
+  },
+  "news": {
+    "title": "News & Insights",
+    "subtitle": "Industry analysis, company updates and e-commerce logistics insights from our experts."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "subtitle": "The page you are looking for doesn’t exist or has been moved.",
+    "backHome": "Back to home",
+    "trackParcel": "Track a parcel"
+  },
+  "footer": {
+    "addresses": "Europe: Brucargo Building 829 C, 1830 Machelen, Belgium",
+    "addressesUk": "United Kingdom: Unit 3, Heathrow Logistics Park, Bedfont Rd, Feltham TW14 8EE, United Kingdom",
+    "tagline": "Landmark Global - Your logistics partner for ecommerce business.",
+    "solutions": "Our solutions",
+    "destinations": "Destinations",
+    "company": "Company",
+    "legal": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms and Condition",
+      "cookies": "Cookie Policy",
+      "accessibility": "Accessibility Statement"
+    }
+  }
+}

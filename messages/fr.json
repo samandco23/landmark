@@ -1,0 +1,197 @@
+{
+  "meta": {
+    "title": "Logistique e-commerce transfrontalière",
+    "description": "Services de logistique internationale pour les entreprises - nous sommes experts dans le transport de colis, le dédouanement et la livraison de produits e-commerce."
+  },
+  "nav": {
+    "businessEnquiry": "Demande commerciale",
+    "customerSupport": "Support client",
+    "parcelTracking": "Suivi de colis",
+    "ourCompany": "Notre entreprise",
+    "sustainability": "Durabilité",
+    "clientLogin": "Espace client",
+    "services": "Services",
+    "destinations": "Destinations",
+    "integrations": "Intégrations",
+    "mercury": "Mercury",
+    "news": "Actualités & Insights",
+    "contactUs": "Nous contacter",
+    "allDestinations": "Toutes les destinations"
+  },
+  "home": {
+    "hero": {
+      "title": "We make global ecommerce easy",
+      "subtitle": "Chez Landmark Global, nous ne nous contentons pas d'expédier... nous simplifions. Grâce à une expertise locale et un réseau mondial, nous aidons votre entreprise à se développer en toute simplicité.",
+      "cta": "En savoir plus"
+    },
+    "gateway": {
+      "title": "Votre passerelle vers une expédition mondiale sans effort",
+      "intro": "Expertise locale, solutions transfrontalières flexibles et une plateforme unique pour tout gérer... de l'intégration à la livraison.",
+      "body": "Intégrez votre activité à notre réseau mondial en toute fluidité, avec conformité, rapidité et transparence à chaque étape. Suivez, optimisez et développez vos flux avec des outils conçus pour simplifier la logistique internationale et améliorer l'expérience client."
+    },
+    "features": {
+      "f1": {
+        "title": "Une portée mondiale avec une expertise locale",
+        "text": "Parce que nous faisons partie de Bnode, vous êtes connecté à un réseau logistique international tout en bénéficiant de l'attention d'une équipe Landmark Global locale et engagée."
+      },
+      "f2": {
+        "title": "Des capacités transfrontalières fiables et flexibles",
+        "text": "Parce que nous sommes neutres vis-à-vis des transporteurs, nous offrons flexibilité et solutions de qualité vers plus de 220 destinations. Nous réunions fulfilment, logistique et dédouanement."
+      },
+      "f3": {
+        "title": "Une connexion unique pour tous nos services réseau",
+        "text": "Mercury est un logiciel propriétaire robuste et riche en fonctionnalités, conçu et détenu par Landmark Global, offrant toutes les fonctionnalités nécessaires pour gérer l'expédition de bout en bout."
+      },
+      "f4": {
+        "title": "Une équipe d'onboarding spécialisée",
+        "text": "Notre intégration est pilotée par des spécialistes en logistique, technologie et service client. Nous rendons le processus rapide et fluide en alignant vos systèmes et vos flux dès le premier jour."
+      }
+    },
+    "usps": {
+      "title": "La livraison de colis, en toute simplicité",
+      "text": "Chez Landmark Global, nous sommes des experts du transport, du dédouanement et de la livraison de produits e-commerce directement aux clients partout dans le monde.",
+      "stats": {
+        "customers": "clients e-commerce de premier plan",
+        "partners": "partenaires commerciaux",
+        "facilities": "installations sur 4 continents"
+      }
+    },
+    "services": {
+      "parcel": {
+        "title": "Expédition internationale de colis",
+        "p1": "Nous donnons du sens à chaque kilomètre. Du premier mouvement à la livraison finale, nos services de livraison spécialisés garantissent fiabilité et contrôle. Nous transportons vos produits avec soin à travers les villes, les pays et les continents.",
+        "p2": "Grâce à notre réseau de transport national et international, nous livrons chaque expédition efficacement, partout, à tout moment et à l'heure.",
+        "cta": "En savoir plus"
+      },
+      "trade": {
+        "title": "Services douaniers",
+        "p1": "Nos équipes conformité internes sont des expertes du dédouanement de vos produits partout dans le monde, afin que vos expéditions soient traitées efficacement grâce à nos services de dédouanement.",
+        "p2": "En combinant notre plateforme de dédouanement propriétaire avec une équipe d'experts commerciaux dédiés, nous rendons l'expansion mondiale simple et sans tracas pour les entreprises de toutes tailles.",
+        "cta": "En savoir plus"
+      },
+      "returns": {
+        "title": "Gestion flexible des retours",
+        "p1": "Nos solutions de retours transfrontaliers permettent à vos clients de renvoyer facilement leurs articles, tout en vous donnant un contrôle et une visibilité totale à chaque étape.",
+        "p2": "En coulisses, nous gérons tout : génération d'étiquettes, transport premier kilomètre, dédouanement et livraison dernier kilomètre, que ce soit vers votre entrepôt, votre 3PL ou un hub régional de consolidation.",
+        "cta": "En savoir plus"
+      },
+      "ecommerce": {
+        "title": "Solutions e-commerce",
+        "p1": "Chez Landmark Global, nous sommes spécialisés dans les services logistiques transfrontaliers fiables pour les entreprises en ligne de toutes tailles. Au-delà de notre présence mondiale, nous avons l'expertise pour couvrir tous vos besoins d'expédition e-commerce.",
+        "p2": "Nous travaillons avec un large éventail de partenaires postaux et de livraison pour desservir plus de 220 destinations dans le monde. Nos partenariats avec les grands transporteurs nous permettent d'offrir des tarifs compétitifs et des options de livraison flexibles, adaptées à votre activité.",
+        "cta": "En savoir plus"
+      },
+      "mail": {
+        "title": "Distribution postale internationale",
+        "p1": "Nous mettons à votre disposition une connaissance et une expérience approfondies de la distribution postale mondiale, avec des liaisons quotidiennes vers les opérateurs postaux du monde entier.",
+        "bullets": {
+          "b1": "Réseau mondial – Liaisons directes avec les grands systèmes postaux sur tous les continents.",
+          "b2": "Expertise éprouvée – Des décennies d'expérience en logistique internationale et conformité.",
+          "b3": "Rapidité fiable – Des liaisons quotidiennes pour des livraisons ponctuelles et sécurisées partout."
+        },
+        "cta": "Solutions postales"
+      }
+    },
+    "map": {
+      "title": "Notre portée mondiale",
+      "text": "Nous sommes fiers d'offrir des services de livraison vers plus de 220 destinations dans le monde, avec un focus sur les marchés clés ci-dessous. Ces corridors stratégiques sont ceux où nous pouvons vous fournir des solutions logistiques de premier ordre, pour que vos colis e-commerce arrivent à destination efficacement et en toute fiabilité.",
+      "facilities": "installations",
+      "regions": {
+        "europe": "Europe",
+        "americas": "Amériques",
+        "asia": "Asie",
+        "oceania": "Océanie"
+      }
+    },
+    "partners": {
+      "title": "Ils nous font confiance, parmi les leaders de l'e-commerce"
+    },
+    "cta": {
+      "contact": "Nous contacter"
+    },
+    "blog": {
+      "title": "En savoir plus en explorant notre blog",
+      "readMore": "Voir plus d'articles",
+      "readTime": "{minutes}"
+    }
+  },
+  "tracking": {
+    "title": "Suivi de colis",
+    "subtitle": "Saisissez votre numéro de suivi pour suivre votre expédition à chaque étape de son parcours.",
+    "placeholder": "ex. LMG-XXXXXXXX",
+    "button": "Suivre",
+    "notFound": "Aucune expédition trouvée pour ce numéro de suivi.",
+    "demoHint": "Essayez un code de démo :",
+    "status": {
+      "CREATED": "Étiquette créée",
+      "IN_TRANSIT": "En transit",
+      "CUSTOMS": "En douane",
+      "OUT_FOR_DELIVERY": "En cours de livraison",
+      "DELIVERED": "Livré",
+      "EXCEPTION": "Incident",
+      "UNKNOWN": "Inconnu"
+    },
+    "destination": "Destination",
+    "timeline": "Parcours de l'expédition"
+  },
+  "contact": {
+    "title": "Nous contacter",
+    "subtitle": "Parlez-nous de vos besoins d'expédition et nos experts vous répondront.",
+    "name": "Nom complet",
+    "email": "Adresse e-mail",
+    "company": "Société (optionnel)",
+    "destination": "Marchés de destination principaux (optionnel)",
+    "message": "Votre message",
+    "submit": "Envoyer le message",
+    "success": "Merci ! Votre message a bien été envoyé.",
+    "error": "Une erreur est survenue. Vérifiez le formulaire et réessayez."
+  },
+  "services": {
+    "title": "Nos services",
+    "subtitle": "Une logistique transfrontalière pensée pour votre activité — des colis aux solutions postales."
+  },
+  "about": {
+    "title": "Notre entreprise",
+    "intro": "Landmark Global est le spécialiste de la logistique internationale de Bnode, reliant les commerçants à leurs clients dans plus de 220 destinations.",
+    "statCustomers": "clients e-commerce de premier plan",
+    "statPartners": "partenaires commerciaux",
+    "statFacilities": "implantations sur 4 continents",
+    "body1": "Nous combinons expertise locale et réseau mondial. Nos équipes connaissent parfaitement les marchés sur lesquels elles opèrent, et notre modèle « carrier neutral » nous permet de choisir la meilleure option de livraison pour chaque colis.",
+    "body2": "De l'onboarding au dédouanement puis à la livraison finale, une seule plateforme — Mercury — vous donne une visibilité de bout en bout sur vos expéditions internationales.",
+    "cta": "Nous contacter"
+  },
+  "sustainability": {
+    "title": "Développement durable",
+    "intro": "Nous nous engageons pour une logistique e-commerce transfrontalière plus durable — pour la planète comme pour les communautés que nous livrons.",
+    "pill1": "des expéditions mesurées en CO₂e",
+    "pill2": "de reporting par colis",
+    "pill3": "destinations desservies durablement",
+    "body1": "Notre modèle « carrier neutral » nous permet d'intégrer la performance environnementale dans chaque décision d'acheminement, en combinant réseaux postaux et colis pour réduire la distance parcourue par colis.",
+    "body2": "Nous consolidons les volumes, optimisons les lignes longues et investissons dans l'efficacité énergétique de nos 27 implantations, tout en aidant nos clients à proposer des options de livraison plus vertes au checkout.",
+    "cta": "Parler à notre équipe"
+  },
+  "news": {
+    "title": "Actualités & Analyses",
+    "subtitle": "Analyses sectorielles, actualités de l'entreprise et décryptages logistique e-commerce par nos experts."
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "subtitle": "La page que vous cherchez n'existe pas ou a été déplacée.",
+    "backHome": "Retour à l'accueil",
+    "trackParcel": "Suivre un colis"
+  },
+  "footer": {
+    "addresses": "Europe : Brucargo Building 829 C, 1830 Machelen, Belgique",
+    "addressesUk": "Royaume-Uni : Unit 3, Heathrow Logistics Park, Bedfont Rd, Feltham TW14 8EE, Royaume-Uni",
+    "tagline": "Landmark Global - Votre partenaire logistique pour l'e-commerce.",
+    "solutions": "Nos solutions",
+    "destinations": "Destinations",
+    "company": "Entreprise",
+    "legal": {
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions générales",
+      "cookies": "Politique de cookies",
+      "accessibility": "Déclaration d'accessibilité"
+    }
+  }
+}

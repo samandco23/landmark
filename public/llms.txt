@@ -1,0 +1,46 @@
+# Landmark Global
+
+> Cross-border e-commerce logistics provider: international parcel delivery, customs clearance, returns management, fulfillment and global mail solutions to 220+ destinations worldwide.
+
+This site is a technical demonstration inspired by Landmark Global's design. It is available in English and French.
+
+## Main pages
+
+- [Home (EN)](/en): company overview, services, global network of 27 facilities, partners.
+- [Accueil (FR)](/fr): version française de la page d'accueil.
+- [Our Company](/en/about): who we are — 500+ e-commerce customers, 75 commercial partners, 27 facilities across 4 continents.
+- [Sustainability](/en/sustainability): our commitment to more sustainable cross-border logistics.
+- [News & Insights](/en/news): industry analysis and company updates.
+- [Contact](/en/contact): contact form for shipping enquiries.
+
+## Services
+
+- [Cross-Border Shipping](/en/services/parcel-delivery): international parcel delivery to 220+ destinations.
+- [US Domestic Shipping](/en/services/us-domestic-shipping): nationwide United States parcel delivery.
+- [Canada Domestic Shipping](/en/services/canada-domestic-shipping): coast-to-coast Canadian delivery.
+- [Fulfillment Solutions](/en/services/fulfillment-solutions): storage, pick & pack, same-day dispatch.
+- [Trade Services](/en/services/customs-clearance): customs clearance and compliance expertise.
+- [Returns Solutions](/en/services/returns-management): cross-border returns management.
+- [Ecommerce Solutions](/en/services/ecommerce-delivery): cross-border logistics for online businesses.
+- [Mail Solutions](/en/services/international-mail-delivery): global mail with daily postal connections.
+
+## Technology
+
+- [Integrations](/en/technology/integrations): e-commerce plugins, REST API and carrier network access.
+- [Mercury](/en/technology/mercury): Landmark Global's proprietary end-to-end shipping platform.
+
+## Destinations
+
+Country-specific parcel delivery pages: [United States](/en/destinations/parcel-delivery-to-united-states), [Canada](/en/destinations/parcel-delivery-to-canada), [United Kingdom](/en/destinations/parcel-delivery-to-united-kingdom), [Belgium](/en/destinations/parcel-delivery-to-belgium), [France](/en/destinations/parcel-delivery-to-france), [Spain](/en/destinations/parcel-delivery-to-spain), [Netherlands](/en/destinations/parcel-delivery-to-netherlands), [Italy](/en/destinations/parcel-delivery-to-italy), [Germany](/en/destinations/parcel-delivery-to-germany), [Japan](/en/destinations/parcel-delivery-to-japan).
+
+## Tools
+
+- [Parcel tracking](/en/tracking): follow a shipment with a tracking number (format LMG-XXXXXXXX, demo codes available on the page). A machine-readable API is available at `GET /api/tracking/{code}` returning JSON with status, destination and events.
+- [Careers](/en/careers): open positions across 27 facilities.
+
+## Optional
+
+- [Privacy Policy](/en/legal/privacy-policy)
+- [Terms and Conditions](/en/legal/terms-and-conditions)
+- [Cookie Policy](/en/legal/cookie-policy)
+- [Accessibility Statement](/en/legal/accessibility-statement)

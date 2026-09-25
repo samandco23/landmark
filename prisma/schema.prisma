@@ -1,0 +1,45 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id       String   @id @default(cuid())
+  email    String   @unique
+  password String
+  name     String
+  role     String   @default("CLIENT")
+  parcels  Parcel[]
+}
+
+model Parcel {
+  id             String         @id @default(cuid())
+  trackingCode   String         @unique
+  recipient      String
+  recipientEmail String?
+  destination    String
+  service        String         @default("PARCEL")
+  status         String         @default("CREATED")
+  weightKg       Float?
+  ownerId        String?
+  owner          User?          @relation(fields: [ownerId], references: [id], onDelete: SetNull)
+  createdAt      DateTime       @default(now())
+  updatedAt      DateTime       @updatedAt
+  events         TrackingEvent[]
+}
+
+model TrackingEvent {
+  id          String   @id @default(cuid())
+  parcelId    String
+  status      String
+  location    String?
+  description String?
+  timestamp   DateTime @default(now())
+  parcel      Parcel   @relation(fields: [parcelId], references: [id], onDelete: Cascade)
+
+  @@index([parcelId, timestamp])
+}
