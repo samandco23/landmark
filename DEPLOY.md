@@ -27,7 +27,7 @@ Puis créez un dépôt **privé** sur github.com (⚠️ privé : le projet cont
 
 ```bash
 git branch -M main
-git remote add origin git@github.com:alphaomegacorporate/landmark.git
+git remote add origin git@github.com:samandco23/landmark.git
 git push -u origin main
 ```
 
