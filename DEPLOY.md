@@ -50,12 +50,9 @@ git push -u origin main
 
 ## 4. Créer les migrations sur la base de production
 
-La commande `build` exécute automatiquement `prisma migrate deploy` (qui applique le dossier `prisma/migrations/` déjà committé). **Aucune action manuelle n'est requise à chaque déploiement.**
-
-Pour la première mise en place (ou après un changement de schéma), appliquez les migrations depuis votre machine :
+Les migrations ne tournent **pas** pendant le build Vercel — le build n'a pas besoin d'accéder à la base. Appliquez-les manuellement depuis votre machine, **obligatoirement avant le premier déploiement** (puis après chaque changement de schéma) :
 
 ```bash
-# .env local pointé temporairement vers la base de prod
 DATABASE_URL="postgresql://…neon.tech/neondb?sslmode=require" npx prisma migrate deploy
 ```
 
@@ -64,8 +61,8 @@ DATABASE_URL="postgresql://…neon.tech/neondb?sslmode=require" npx prisma migra
 ## 5. Importer le projet dans Vercel
 
 1. [vercel.com/new](https://vercel.com/new) → **Import Git Repository** → sélectionnez `logistics-app`.
-2. **Framework Preset** : Next.js (détecté automatiquement). Ne touchez pas aux commandes de build — le `package.json` gère tout :
-   - Build : `prisma generate && prisma migrate deploy && next build`
+2. **Framework Preset** : Next.js (détecté automatiquement). Ne touchez pas aux commandes de build :
+   - Build : `prisma generate && next build` (le build **n'accède pas** à la base — migrations manuelles, étape 4)
    - Install : `npm install` (le `postinstall` exécute `prisma generate`)
 3. **Region** : *Frankfurt (fra1)* pour coller à Neon Europe (latence minimale).
 4. Avant de cliquer sur **Deploy**, ouvrez **Environment Variables** et ajoutez les 4 variables ci-dessous.
@@ -76,7 +73,7 @@ DATABASE_URL="postgresql://…neon.tech/neondb?sslmode=require" npx prisma migra
 
 | Variable | Valeur | Notes |
 |---|---|---|
-| `DATABASE_URL` | `postgresql://…neon.tech/neondb?sslmode=require` | L'URL Neon copiée à l'étape 3 |
+| `DATABASE_URL` | `postgresql://…neon.tech/neondb?sslmode=require` | L'URL **Neon** copiée à l'étape 3 — ⚠️ jamais l'URL `localhost:5433` du `.env` local |
 | `NEXTAUTH_SECRET` | `openssl rand -base64 32` | Générer une valeur **unique en prod** |
 | `NEXTAUTH_URL` | `https://votre-projet.vercel.app` | URL publique du déploiement |
 | `ADMIN_EMAIL` | votre@email.com | Utilisé par le seed |
@@ -129,8 +126,8 @@ npx prisma db seed
 Retournez dans Vercel → **Deploy**. Le build :
 
 1. installe les dépendances (`postinstall` → `prisma generate`) ;
-2. applique les migrations (`prisma migrate deploy`) ;
-3. compile les 32 pages (statique quand possible).
+2. compile les pages (statique quand possible) — **sans accéder à la base** ;
+3. les migrations ont été appliquées manuellement à l'étape 4.
 
 À la fin, Vercel affiche l'URL `https://votre-projet.vercel.app`.
 
@@ -171,8 +168,8 @@ Après toute modification de `prisma/schema.prisma` :
 
 ```bash
 npx prisma migrate dev --name ma_migration        # en local (crée le fichier migrations/)
+DATABASE_URL="postgresql://…neon.tech/neondb?sslmode=require" npx prisma migrate deploy   # sur la base prod
 git add prisma/migrations && git commit -m "schema: …" && git push
-# prisma migrate deploy s'exécutera automatiquement au build Vercel
 ```
 
 ---
@@ -181,7 +178,8 @@ git add prisma/migrations && git commit -m "schema: …" && git push
 
 | Symptôme | Cause probable | Solution |
 |---|---|---|
-| Build échoue sur `prisma migrate deploy` | `DATABASE_URL` absente/fausse | Vérifier la variable (tous environnements) |
+| `P1001: Can't reach database at localhost:5433` (build ou runtime Vercel) | `DATABASE_URL` sur Vercel = URL Docker locale au lieu de Neon | Remplacer par l'URL Neon dans Vercel → Environment Variables (tous environnements), puis Redeploy |
+| `Environment variable not found: DATABASE_URL` (runtime) | Variable absente sur Vercel | L'ajouter (URL Neon) puis Redeploy |
 | `P1001: Can't reach database` | Base en pause (Neon free) ou région éloignée | Réactiver la base dans Neon ; choisir la même région |
 | Redirection `/api/auth/error` au login | `NEXTAUTH_URL` ≠ URL réelle du site | Corriger la variable + Redeploy |
 | `NEXTAUTH_SECRET` manquant | Variable absente | L'ajouter, puis Redeploy |
