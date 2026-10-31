@@ -9,6 +9,7 @@ import { locales } from "@/i18n";
 const LABELS: Record<string, { region: string; lang: string }> = {
   en: { region: "Europe & Asia", lang: "EN" },
   fr: { region: "Europe & Asie", lang: "FR" },
+  ru: { region: "Европа и Азия", lang: "RU" },
 };
 
 function GlobeIcon() {
@@ -78,7 +79,7 @@ export function LanguageSwitcher() {
                 l === locale ? "font-semibold" : ""
               }`}
             >
-              <span>{l === "fr" ? "Europe & Asie" : "Europe & Asia"}</span>
+              <span>{LABELS[l]?.region ?? "Europe & Asia"}</span>
               <span className="text-grey-mid-02">{l.toUpperCase()}</span>
             </Link>
           ))}

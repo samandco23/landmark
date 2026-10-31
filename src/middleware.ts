@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { getToken } from "next-auth/jwt";
 
 const intlMiddleware = createMiddleware({
-  locales: ["en", "fr"],
+  locales: ["en", "fr", "ru"],
   defaultLocale: "en",
   localePrefix: "always",
 });
@@ -34,7 +34,7 @@ export async function middleware(req: NextRequest) {
   }
 
   // ── Espace client /portal : session requise (toutes langues) ─────────
-  const portalMatch = pathname.match(/^\/(en|fr)\/portal(\/.*)?$/);
+  const portalMatch = pathname.match(/^\/(en|fr|ru)\/portal(\/.*)?$/);
   if (portalMatch) {
     const locale = portalMatch[1];
     if (pathname === `/${locale}/portal/login`) return intlMiddleware(req);

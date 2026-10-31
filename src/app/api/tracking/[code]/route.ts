@@ -14,7 +14,9 @@ export async function GET(
     return NextResponse.json({ error: "Invalid tracking code" }, { status: 400 });
   }
 
-  const locale = req.nextUrl.searchParams.get("locale") === "fr" ? "fr" : "en";
+  const requestedLocale = req.nextUrl.searchParams.get("locale");
+  const locale =
+    requestedLocale === "fr" || requestedLocale === "ru" ? requestedLocale : "en";
 
   const result = await trackParcel(parsed.data);
 

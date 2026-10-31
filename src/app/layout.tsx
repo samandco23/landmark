@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Landmark Global",
     locale: "en",
-    alternateLocale: ["fr"],
+    alternateLocale: ["fr", "ru"],
     images: [
       {
         url: "/assets/images/hero-home.jpg",

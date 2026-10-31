@@ -16,12 +16,14 @@ const ROUTES = [
   ["Warsaw, Poland", "Northampton, UK", "Buffalo, US"],
 ] as const;
 
-const STAGES: Array<{ status: NormalizedEvent["status"]; fr: string; en: string }> = [
-  { status: "CREATED", fr: "Étiquette créée — colis enregistré", en: "Shipping label created — parcel registered" },
-  { status: "IN_TRANSIT", fr: "En transit vers le pays de destination", en: "In transit to destination country" },
-  { status: "CUSTOMS", fr: "Dédouanement en cours", en: "Customs clearance in progress" },
-  { status: "OUT_FOR_DELIVERY", fr: "En cours de livraison", en: "Out for delivery" },
-  { status: "DELIVERED", fr: "Colis livré", en: "Parcel delivered" },
+type DemoLocale = "fr" | "en" | "ru";
+
+const STAGES: Array<{ status: NormalizedEvent["status"]; fr: string; en: string; ru: string }> = [
+  { status: "CREATED", fr: "Étiquette créée — colis enregistré", en: "Shipping label created — parcel registered", ru: "Этикетка создана — отправление зарегистрировано" },
+  { status: "IN_TRANSIT", fr: "En transit vers le pays de destination", en: "In transit to destination country", ru: "В пути в страну назначения" },
+  { status: "CUSTOMS", fr: "Dédouanement en cours", en: "Customs clearance in progress", ru: "Идёт таможенное оформление" },
+  { status: "OUT_FOR_DELIVERY", fr: "En cours de livraison", en: "Out for delivery", ru: "Передано курьеру" },
+  { status: "DELIVERED", fr: "Colis livré", en: "Parcel delivered", ru: "Посылка доставлена" },
 ];
 
 /**
@@ -29,7 +31,7 @@ const STAGES: Array<{ status: NormalizedEvent["status"]; fr: string; en: string 
  * timeline cohérente. Permet de développer et de démontrer le parcours de
  * suivi complet sans clé API externe.
  */
-export function generateDemoTracking(code: string, locale: "fr" | "en" = "en"): TrackingResult {
+export function generateDemoTracking(code: string, locale: DemoLocale = "en"): TrackingResult {
   const h = hashString(code.toUpperCase());
   const route = ROUTES[h % ROUTES.length];
   // Progression 1..5 : chaque code a un état d'avancement fixe
@@ -46,7 +48,7 @@ export function generateDemoTracking(code: string, locale: "fr" | "en" = "en"): 
     events.push({
       status: stage.status,
       location: route[Math.min(i, route.length - 1)] ?? route[0],
-      description: locale === "fr" ? stage.fr : stage.en,
+      description: locale === "ru" ? stage.ru : locale === "fr" ? stage.fr : stage.en,
       timestamp: ts.toISOString(),
     });
   }

@@ -15,6 +15,8 @@ const STATIC_PATHS = [
   "/technology/mercury",
 ];
 
+const SITE_LOCALES = ["en", "fr", "ru"] as const;
+
 const SERVICE_SLUGS = [
   "parcel-delivery",
   "us-domestic-shipping",
@@ -30,7 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const entries: MetadataRoute.Sitemap = [];
 
-  for (const locale of ["en", "fr"]) {
+  for (const locale of SITE_LOCALES) {
     for (const path of STATIC_PATHS) {
       entries.push({
         url: `${siteUrl}/${locale}${path}`,
@@ -41,6 +43,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
           languages: {
             en: `${siteUrl}/en${path}`,
             fr: `${siteUrl}/fr${path}`,
+            ru: `${siteUrl}/ru${path}`,
           },
         },
       });
@@ -55,6 +58,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
           languages: {
             en: `${siteUrl}/en/services/${slug}`,
             fr: `${siteUrl}/fr/services/${slug}`,
+            ru: `${siteUrl}/ru/services/${slug}`,
           },
         },
       });
@@ -69,6 +73,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
           languages: {
             en: `${siteUrl}/en/destinations/${dest.slug}`,
             fr: `${siteUrl}/fr/destinations/${dest.slug}`,
+            ru: `${siteUrl}/ru/destinations/${dest.slug}`,
           },
         },
       });

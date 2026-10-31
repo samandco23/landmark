@@ -17,7 +17,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
-  const other = locale === "fr" ? "en" : "fr";
+  const alternateLocale = locales.filter((l) => l !== locale);
 
   return {
     title: t("title"),
@@ -27,6 +27,7 @@ export async function generateMetadata({
       languages: {
         en: "/en",
         fr: "/fr",
+        ru: "/ru",
         "x-default": "/en",
       },
     },
@@ -34,7 +35,7 @@ export async function generateMetadata({
       title: t("title"),
       description: t("description"),
       locale,
-      alternateLocale: other,
+      alternateLocale,
       url: `/${locale}`,
     },
   };

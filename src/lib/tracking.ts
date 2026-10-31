@@ -50,26 +50,33 @@ function statusFromCode(code: string): TrackingStatus {
 }
 
 async function fromLocal(code: string): Promise<TrackingResult | null> {
-  const parcel = await db.parcel.findUnique({
-    where: { trackingCode: code },
-    include: { events: { orderBy: { timestamp: "asc" } } },
-  });
-  if (!parcel) return null;
-  return {
-    code: parcel.trackingCode,
-    found: true,
-    source: "local",
-    status: (LOCAL_TO_NORMALIZED[parcel.status] ?? "UNKNOWN") as TrackingStatus,
-    destination: parcel.destination,
-    recipient: parcel.recipient,
-    service: parcel.service,
-    events: parcel.events.map((e) => ({
-      status: (LOCAL_TO_NORMALIZED[e.status] ?? "UNKNOWN") as TrackingStatus,
-      location: e.location,
-      description: e.description,
-      timestamp: e.timestamp.toISOString(),
-    })),
-  };
+  try {
+    const parcel = await db.parcel.findUnique({
+      where: { trackingCode: code },
+      include: { events: { orderBy: { timestamp: "asc" } } },
+    });
+    if (!parcel) return null;
+    return {
+      code: parcel.trackingCode,
+      found: true,
+      source: "local",
+      status: (LOCAL_TO_NORMALIZED[parcel.status] ?? "UNKNOWN") as TrackingStatus,
+      destination: parcel.destination,
+      recipient: parcel.recipient,
+      service: parcel.service,
+      events: parcel.events.map((e) => ({
+        status: (LOCAL_TO_NORMALIZED[e.status] ?? "UNKNOWN") as TrackingStatus,
+        location: e.location,
+        description: e.description,
+        timestamp: e.timestamp.toISOString(),
+      })),
+    };
+  } catch (error) {
+    // Base injoignable ou en veille : on continue vers l'API externe puis la démo
+    // plutôt que de renvoyer une 500 au visiteur qui suit son colis.
+    console.warn("Local tracking lookup unavailable:", error);
+    return null;
+  }
 }
 
 /**
